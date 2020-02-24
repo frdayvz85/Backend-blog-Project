@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+
+<section id="contact">
+<div class="container">
+<h1>Contact</h1>
+<div class="row">
+<div class="col-md-6">
+<form class="contact-form">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Sizin Adınız">
+</div>
+<div class="form-group">
+<input type="number" class="form-control" placeholder="Sizin Nömreniz">
+</div>
+<div class="form-group">
+<input type="email" class="form-control" placeholder="Sizin Emailiniz">
+</div>
+<div class="form-group">
+<textarea  class="form-control" placeholder="Sizin Mesajınız" rows="4"></textarea>
+</div>
+<button type="submit" class="btn btn-primary"> Mesaj Gönder</button>
+</form>
+</div>
+<div class="col-md-6 contact-info">
+<div class="follow"> <b>Ünvan:</b><i class="fa fa-map-marker"></i> Naxçıvan Şeh,Kengerli r</div>
+    <div class="follow"> <b>Telefon:</b><i class="fa fa-phone"></i> +994-77-50-15-38</div>
+    <div class="follow"> <b>Email:</b><i class="fa fa-envelope-o"></i>ferideyvazov25@gmail.com</div>
+    <div class="follow"> <label><b>Get Social:</b></label>
+    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i> </a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+    
+{% endblock content %}

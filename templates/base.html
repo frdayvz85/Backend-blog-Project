@@ -1,0 +1,24 @@
+{% load static %}
+
+<html lang="en">
+
+    {% include "head.html" %}
+
+
+<body>
+{% include 'header.html' %}
+{% include 'messages.html' %}
+    {% block content %}
+
+    {% endblock content %}
+
+{% include 'footer.html' %}
+{% include 'script.html' %}
+{% comment %}
+{% load sweetify %}
+{% sweetify %}
+ {% endcomment %}
+ {% load sweetify %}
+{% sweetify %}
+</body>
+</html>

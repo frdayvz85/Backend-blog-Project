@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Mesaj gönder{% endblock %}
+{% block content %}
+<div class="body" style="background-color:#00FFFF;">
+<div class="container">
+<div class="row">
+<div class="col-md-6 offset-md-3">
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h1>Contact form</h1>
+    {{ form|crispy }}
+   
+    <input class="btn btn-success" type="submit" value="Mesaj Gönder">
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock content %}
